@@ -2,10 +2,6 @@
 let color = document.getElementById('colorPicker');
 let table = document.getElementById('pixelCanvas');
 let sizePicker = document.getElementById('sizePicker');
-// variables for color selection and table
-let color = document.getElementById('colorPicker');
-let table = document.getElementById('pixelCanvas');
-let sizePicker = document.getElementById('sizePicker');
 // variables for grid size
 let height = document.getElementById('inputHeight').value;
 let width = document.getElementById('inputWidth').value;
@@ -32,12 +28,11 @@ function makeGrid(height, width) {
       let cell = row.insertCell(j);
       //add style of color picker to grid selection
       cell.addEventListener('click', function() {
-        if(cell.style.backgroundColor = color.value === color.value){
-          cell.style.backgroundColor = " ";
+        if (cell.style.backgroundColor === color.value) {
+          cell.style.backgroundColor = "white";
         }
         else{
           cell.style.backgroundColor = color.value;
-
         }
       });
     }
