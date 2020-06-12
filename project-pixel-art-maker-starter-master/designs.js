@@ -2,6 +2,10 @@
 let color = document.getElementById('colorPicker');
 let table = document.getElementById('pixelCanvas');
 let sizePicker = document.getElementById('sizePicker');
+// variables for color selection and table
+let color = document.getElementById('colorPicker');
+let table = document.getElementById('pixelCanvas');
+let sizePicker = document.getElementById('sizePicker');
 // variables for grid size
 let height = document.getElementById('inputHeight').value;
 let width = document.getElementById('inputWidth').value;
@@ -13,7 +17,7 @@ sizePicker.addEventListener('submit', function() {
 // information to determine grid size
   let height = document.getElementById('inputHeight').value;
   let width = document.getElementById('inputWidth').value;
-  //this remove the
+  //this remove the base cell created.
   table.firstElementChild.remove();
 
   makeGrid(height, width);
